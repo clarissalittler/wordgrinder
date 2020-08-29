@@ -465,6 +465,7 @@ emit("build ", OBJDIR.."/luascripts.c: luascripts ", table.concat({
     "src/lua/export/troff.lua",
     "src/lua/export/opendocument.lua",
     "src/lua/export/markdown.lua",
+    "src/lua/export/gemini.lua",
     "src/lua/import.lua",
     "src/lua/import/html.lua",
     "src/lua/import/text.lua",
