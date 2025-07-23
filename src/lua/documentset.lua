@@ -187,13 +187,13 @@ DocumentSet.setCurrent = function(self, name)
 end
 
 DocumentSet.renameDocument = function(self, oldname, newname)
-	if self.documents[newname] then
+	if self:findDocument(newname) then
 		return false
 	end
 
-	local d = self.documents[oldname]
-	self.documents[oldname] = nil
-	self.documents[newname] = d
+	local d = self:findDocument(oldname)
+	self._documentIndex[oldname] = nil
+	self._documentIndex[newname] = d
 	d.name = newname
 
 	self:touch()
