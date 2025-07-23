@@ -58,6 +58,7 @@ TESTS = [
     "weirdness-combining-words",
     "weirdness-delete-word",
     "weirdness-deletion-with-multiple-spaces",
+    "weirdness-document-rename",
     "weirdness-documentset-default-name",
     "weirdness-end-of-lines",
     "weirdness-forward-delete",
