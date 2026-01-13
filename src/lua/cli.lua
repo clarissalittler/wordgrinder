@@ -19,6 +19,7 @@ local import_table =
 local export_table =
 {
 	["html"] = Cmd.ExportHTMLFile,
+	["gmi"] = Cmd.ExportGemtextFile,
 	["md"] = Cmd.ExportMarkdownFile,
 	["odt"] = Cmd.ExportODTFile,
 	["org"] = Cmd.ExportOrgFile,
@@ -138,4 +139,3 @@ function CliConvert(file1: string, file2: string)
 	
 	wg.exit(0)
 end
-

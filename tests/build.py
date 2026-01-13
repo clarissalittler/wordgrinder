@@ -9,6 +9,7 @@ TESTS = [
     "clipboard",
     "delete-selection",
     "escape-strings",
+    "export-to-gemtext",
     "export-to-html",
     "export-to-latex",
     "export-to-markdown",

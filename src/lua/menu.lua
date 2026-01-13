@@ -167,6 +167,7 @@ local ExportMenu = CreateMenu("Export current document",
 	E("FEodt",  "O", "Export to ODT...",          nil,         Cmd.ExportODTFile),
 	E("FEhtml", "H", "Export to HTML...",         nil,         Cmd.ExportHTMLFile),
 	E("FEmd",   "M", "Export to Markdown...",     nil,         Cmd.ExportMarkdownFile),
+	E("FEgmi",  "G", "Export to Gemtext...",      nil,         Cmd.ExportGemtextFile),
 	E("FEtxt",  "T", "Export to plain text...",   nil,         Cmd.ExportTextFile),
 	E("FEtex",  "L", "Export to LaTeX...",        nil,         Cmd.ExportLatexFile),
 	E("FEtr",   "F", "Export to Troff...",        nil,         Cmd.ExportTroffFile),
@@ -733,4 +734,3 @@ function ListMenuItems()
 	wg.printout("All supported menu items:\n\n")
 	list(MainMenu)
 end
-

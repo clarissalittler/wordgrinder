@@ -28,6 +28,7 @@ SRCS = [
     "src/lua/export/opendocument.lua",
     "src/lua/export/org.lua",
     "src/lua/export/markdown.lua",
+    "src/lua/export/gemtext.lua",
     "src/lua/import.lua",
     "src/lua/import/html.lua",
     "src/lua/import/text.lua",
