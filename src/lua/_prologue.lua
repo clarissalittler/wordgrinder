@@ -21,6 +21,7 @@ declare function ModalMessage(title: string?, message: string)
 declare function RAlignInField(x: number, y: number, w: number, s: string)
 declare function RebuildParagraphStylesMenu(styles: DocumentStyles)
 declare function RebuildDocumentsMenu(s: {Document})
+declare function RegisterCustomPalettes(custom: {[string]: ColourMap}?)
 declare function ResizeScreen()
 declare function SaveToFile(filename: string, object: any): (boolean, string?)
 declare function SetColour(fg: Colour?, bg: Colour?)
@@ -28,6 +29,8 @@ declare function SetTheme(theme: string)
 declare function SetCurrentStyleHint(sor: number, sand: number)
 declare function SpellcheckerOff(): boolean
 declare function SpellcheckerRestore(state: boolean)
+declare function IsBuiltInTheme(theme: string): boolean
+declare function GetTheme(theme: string): ColourMap?
 declare function UnSmartquotify(s: string): string
 declare function UpdateDocumentStyles()
 declare function WantDenseParagraphLayout(): boolean
@@ -93,4 +96,3 @@ function loadfile(filename: string)
 	end
 	return nil, e
 end
-
